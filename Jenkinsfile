@@ -14,7 +14,7 @@ pipeline {
       }
       stage('publish code') {
          steps {
-            deploy adapters: [tomcat8(credentialsId: 'c980bb5c-a86c-4f7d-bb66-5fb32edc086b', path: '', url: 'http://localhost:8080')], contextPath: null, war: 'target/*.war'
+             deploy adapters: [tomcat8(credentialsId: 'c980bb5c-a86c-4f7d-bb66-5fb32edc086b', path: '', url: 'http://localhost:8080')], contextPath: null, war: 'target/*.war'
          }
       }
    }
